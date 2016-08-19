@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal"
+            android:text="TextView"
+            android:textSize="24dp" />
+
+        
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv"
+            android:layout_marginLeft="46dp"
+            android:layout_marginTop="25dp"
+            android:onClick="ViewTimeTable"
+            android:text="TimeTable" />
+
+        <TextView
+            android:id="@+id/text_View1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/button2"
+            android:layout_below="@+id/button2"
+            android:layout_marginTop="90dp"
+            android:text="Notification"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/text_View2"
+            android:layout_marginTop="38dp"
+            android:onClick="Logout"
+            android:text="Logout" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/text_View2"
+            android:layout_alignLeft="@+id/toggleButton2"
+            android:onClick="onToggleClicked"
+            android:text="ToggleButton" />
+
+        <TextView
+            android:id="@+id/text_View2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/text_View1"
+            android:layout_below="@+id/text_View1"
+            android:layout_marginTop="59dp"
+            android:text="Silent"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button1"
+            android:layout_marginLeft="23dp"
+            android:layout_toRightOf="@+id/text_View2"
+            android:onClick="onsilentToggleClicked"
+            android:text="ToggleButton" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/button2"
+            android:layout_alignLeft="@+id/toggleButton1"
+            android:layout_marginLeft="20dp"
+            android:text="Curriculum"
+            android:onClick="Curriculum" />
+
+    </RelativeLayout>
+
+</ScrollView>
+</RelativeLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <RelativeLayout 
+             android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TextView
+        android:id="@+id/textView_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_name"
+        android:layout_alignRight="@+id/textView_name"
+        android:layout_below="@+id/textView_name"
+        android:layout_marginTop="52dp"
+        android:text="Year"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView_branch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_year"
+        android:layout_below="@+id/spinner_year"
+        android:layout_marginTop="38dp"
+        android:text="Branch"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner
+        android:id="@+id/spinner_branch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinner_year"
+        android:layout_below="@+id/spinner_year"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="22dp"
+         />
+
+    <Spinner
+        android:id="@+id/spinner_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_name"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editText_name"
+        android:layout_marginTop="34dp"
+        android:entries="@array/Year" />
+
+    <TextView
+        android:id="@+id/textView_section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_branch"
+        android:layout_below="@+id/spinner_branch"
+        android:layout_marginTop="40dp"
+        android:text="Section"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner
+        android:id="@+id/spinner_section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinner_branch"
+        android:layout_below="@+id/spinner_branch"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="19dp" />
+
+    <EditText
+        android:id="@+id/editText_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView_year"
+        android:layout_toRightOf="@+id/textView_section"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Registration Page"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_reg"
+        android:layout_marginTop="47dp"
+        android:layout_toLeftOf="@+id/textView_reg"
+        android:text="Name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner_section"
+        android:layout_alignRight="@+id/textView_reg"
+        android:layout_marginRight="34dp"
+        android:onClick="GetDetails"
+        android:text="Submit" />
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>
